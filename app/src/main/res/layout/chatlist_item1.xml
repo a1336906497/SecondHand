@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+    <com.example.qiao.secondhand.widget.CircleImageView
+        android:layout_marginTop="20dp"
+        android:id="@+id/chat_item1_image"
+        android:src="@mipmap/main_my_defaultavatar"
+        android:layout_width="50dp"
+        android:layout_height="50dp" />
+    <TextView
+        android:padding="10dp"
+        android:text="asdjhakjdbha\nfdsfsfsdfsdfsfsfsfsdfsfsf"
+        android:background="@mipmap/chat_bg1"
+        android:id="@+id/chat_list_item1_text"
+        android:layout_width="match_parent"
+        android:layout_height="60dp" />
+</LinearLayout>

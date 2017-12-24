@@ -1,0 +1,201 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ece0e0"
+    tools:context="com.example.qiao.secondhand.fragment.MainMyFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="my" />
+
+    <RelativeLayout
+        android:id="@+id/main_my_relative_1"
+        android:layout_width="match_parent"
+        android:background="@mipmap/main_my_backgroud"
+        android:layout_height="200dp">
+        <com.example.qiao.secondhand.widget.CircleImageView
+            android:id="@+id/main_my_avatar_image"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="30dp"
+            android:layout_centerHorizontal="true"
+            android:src="@mipmap/main_my_defaultavatar"
+            />
+        <TextView
+            android:id="@+id/amin_my_name_text"
+            android:visibility="gone"
+            android:layout_marginTop="20dp"
+            android:textSize="20sp"
+            android:text="用户名"
+            android:layout_below="@id/main_my_avatar_image"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/main_my_signature"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/amin_my_name_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:id="@+id/main_my_login_image"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/main_my_avatar_image"
+            android:layout_centerHorizontal="true"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:clickable="true"
+            android:src="@drawable/login_selectot"
+            />
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            app:srcCompat="@drawable/myinfo_selector"
+            android:id="@+id/imageView"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_above="@+id/main_my_login_image" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:background="#fff"
+        android:id="@+id/main_my_linearlayout"
+        android:layout_below="@id/main_my_relative_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <RelativeLayout
+
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content" >
+            <ImageView
+                android:clickable="true"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/order"
+                android:id="@+id/main_my_order_image"
+                android:layout_width="60dp"
+                android:layout_height="60dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/main_my_order_image"
+                android:layout_alignRight="@id/main_my_order_image"
+                android:layout_below="@id/main_my_order_image"
+                android:gravity="center"
+                android:textSize="13sp"
+                android:maxLines="1"
+                android:text="我的收藏"
+                />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" >
+            <ImageView
+                android:clickable="true"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/release"
+                android:id="@+id/main_my_release_image"
+                android:layout_width="60dp"
+                android:layout_height="60dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/main_my_release_image"
+                android:layout_alignRight="@id/main_my_release_image"
+                android:layout_below="@id/main_my_release_image"
+                android:gravity="center"
+                android:textSize="13sp"
+                android:maxLines="1"
+                android:text="我的发布"
+                />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" >
+            <ImageView
+                android:clickable="true"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/myinfo_selector"
+                android:id="@+id/main_my_info_image"
+                android:layout_width="60dp"
+                android:layout_height="60dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/main_my_info_image"
+                android:layout_alignRight="@id/main_my_info_image"
+                android:layout_below="@id/main_my_info_image"
+                android:gravity="center"
+                android:textSize="13sp"
+                android:maxLines="1"
+                android:text="查看信息"
+                />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/main_my_linearlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:clickable="true"
+            android:layout_marginTop="10dp"
+            android:textSize="17sp"
+            android:paddingLeft="3dp"
+            android:paddingTop="3dp"
+            android:paddingBottom="3dp"
+            android:text="联系我们"
+            android:background="@drawable/normal_pressed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:clickable="true"
+            android:layout_marginTop="10dp"
+            android:textSize="17sp"
+            android:paddingLeft="3dp"
+            android:paddingTop="3dp"
+            android:paddingBottom="3dp"
+            android:text="没想好叫啥"
+            android:background="@drawable/normal_pressed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+        <TextView
+            android:id="@+id/takeoff_image"
+            android:gravity="center"
+            android:layout_gravity="center_horizontal"
+            android:clickable="true"
+            android:layout_marginTop="100dp"
+            android:textSize="17sp"
+            android:paddingLeft="3dp"
+            android:paddingTop="3dp"
+            android:paddingBottom="3dp"
+            android:text="退出登录"
+            android:background="@drawable/register_button"
+            android:layout_width="200dp"
+            android:layout_height="50dp" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>

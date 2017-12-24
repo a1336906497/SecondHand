@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_chat"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.qiao.secondhand.activity.ChatActivity">
+
+    <RelativeLayout
+        android:background="#9ad9ea"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/chat_input_relative"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/goods_true_text"
+            android:gravity="center"
+            android:text="发送"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp" />
+        <EditText
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:layout_toLeftOf="@id/goods_true_text"
+            android:id="@+id/goods_commend_edit"
+            android:background="@mipmap/manage_bg2"
+            android:layout_width="match_parent"
+            android:layout_height="50dp" />
+
+
+
+    </RelativeLayout>
+
+    <ListView
+
+        android:layout_above="@id/chat_input_relative"
+        android:id="@+id/chat_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></ListView>
+
+    <TextView
+        android:text="sadasd"
+        android:id="@+id/chat_text"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+</RelativeLayout>

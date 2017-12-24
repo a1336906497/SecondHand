@@ -1,0 +1,217 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#9ad9ea"
+    tools:context="com.example.qiao.secondhand.fragment.MainReleaseFragment">
+    <RelativeLayout
+        android:background="#fff"
+        android:id="@+id/release_relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textSize="20sp"
+            android:text="发布商品"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <ScrollView
+        android:layout_below="@id/release_relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+
+    <LinearLayout
+        android:id="@+id/release_image_linear"
+        android:background="@mipmap/manage_bg2"
+        android:layout_below="@id/release_relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+        <ImageView
+            android:scaleType="fitXY"
+            android:id="@+id/release_image1"
+            android:src="@drawable/addimage"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+        <ImageView
+            android:id="@+id/release_image2"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+        <ImageView
+            android:id="@+id/release_image3"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+        <ImageView
+            android:id="@+id/release_image4"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+    <TextView
+        android:layout_marginTop="10dp"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:text="标题"
+        android:layout_below="@id/release_image_linear"
+        android:id="@+id/release_name_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:padding="10dp"
+        android:layout_below="@id/release_name_text"
+        android:id="@+id/release_name_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:text="价格"
+        android:layout_below="@id/release_name_edit"
+        android:id="@+id/release_price_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:padding="10dp"
+        android:inputType="number"
+        android:layout_below="@id/release_price_text"
+        android:id="@+id/release_price_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:text="详细描述"
+        android:layout_below="@id/release_price_edit"
+        android:id="@+id/release_context_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:padding="10dp"
+        android:layout_below="@id/release_context_text"
+        android:id="@+id/release_context_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:text="交易地点"
+        android:layout_below="@id/release_context_edit"
+        android:id="@+id/release_place_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:padding="10dp"
+        android:layout_below="@id/release_place_text"
+        android:id="@+id/release_place_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+    <RelativeLayout
+        android:layout_marginLeft="30dp"
+        android:layout_below="@id/release_place_edit"
+        android:layout_marginTop="5dp"
+        android:id="@+id/release_type_relativelayout"
+        android:layout_centerHorizontal="true"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:background="@mipmap/manage_bg2"
+        >
+        <TextView
+            android:gravity="center"
+            android:id="@+id/release_type_text"
+            android:text="一级分类"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp" />
+        <Spinner
+            android:id="@+id/release_type_spinner"
+            android:layout_toRightOf="@id/release_type_text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            >
+        </Spinner>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="5dp"
+        android:id="@+id/release_class_relativelayout"
+        android:layout_below="@id/release_type_relativelayout"
+        android:layout_centerHorizontal="true"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:background="@mipmap/manage_bg2"
+        >
+        <TextView
+            android:gravity="center"
+            android:id="@+id/release_border_text"
+            android:text="二级分类"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp" />
+        <Spinner
+            android:id="@+id/register_class_spinner"
+            android:layout_toRightOf="@id/release_border_text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            >
+        </Spinner>
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/release_button_textview"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:layout_marginTop="50dp"
+        android:layout_below="@id/release_class_relativelayout"
+        android:text="发布"
+        android:gravity="center"
+        android:textSize="30sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:background="@drawable/login_button_selector"></TextView>
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

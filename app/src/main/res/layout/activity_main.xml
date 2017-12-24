@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.qiao.secondhand.MainActivity">
+
+<RadioGroup
+    android:background="@color/white"
+    android:id="@+id/main_radiogroup"
+    android:layout_alignParentBottom="true"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RadioButton
+        android:gravity="center"
+        android:text="首页"
+        android:checked="true"
+        android:textColor="@color/text_check"
+        android:button="@null"
+        android:drawableTop="@drawable/bg_main_radiobutton_home"
+        android:id="@+id/main_radiobutton_home"
+        android:layout_weight="1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <RadioButton
+        android:text="搜索"
+        android:textColor="@color/text_check"
+        android:gravity="center"
+        android:drawableTop="@drawable/bg_main_radiobutton_search"
+        android:id="@+id/main_radiobutton_type"
+        android:button="@null"
+        android:layout_weight="1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <RadioButton
+        android:gravity="center"
+        android:text="发布"
+        android:textColor="@color/text_check"
+        android:drawableTop="@drawable/bg_main_radiobutton_information"
+        android:id="@+id/main_radiobutton_release"
+        android:button="@null"
+        android:layout_weight="1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <RadioButton
+        android:gravity="center"
+        android:text="管理"
+        android:textColor="@color/text_check"
+        android:drawableTop="@drawable/bg_main_radiobutton_manage"
+        android:id="@+id/main_radiobutton_my"
+        android:button="@null"
+        android:layout_weight="1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</RadioGroup>
+
+    <FrameLayout
+        android:id="@+id/main_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/main_radiogroup"
+        ></FrameLayout>
+</RelativeLayout>

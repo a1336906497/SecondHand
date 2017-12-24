@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#dfd8d8"
+    android:padding="10dp"
+    >
+
+<com.example.qiao.secondhand.widget.CircleImageView
+    android:id="@+id/goods_listview_image"
+    android:layout_width="60dp"
+    android:layout_height="60dp"
+    android:src="@mipmap/ic_empty"
+    />
+
+    <RelativeLayout
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/goods_listview_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/goods_listview_name"
+            android:textSize="16sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="用户名"
+            />
+        <TextView
+            android:layout_below="@id/goods_listview_name"
+            android:id="@+id/goods_listview_text"
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="评论内容"
+            />
+        <TextView
+            android:layout_marginRight="20dp"
+           android:layout_alignParentRight="true"
+            android:id="@+id/goods_listview_number"
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1#"
+            />
+
+    </RelativeLayout>
+
+</RelativeLayout>

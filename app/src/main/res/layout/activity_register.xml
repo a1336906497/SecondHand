@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_register"
+    android:layout_width="match_parent"
+    android:background="#9ad9ea"
+    android:layout_height="match_parent"
+    tools:context="com.example.qiao.secondhand.activity.RegisterActivity">
+    <RelativeLayout
+        android:background="#fff"
+        android:id="@+id/register_relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/register_back_image"
+            android:clickable="true"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="3dp"
+            android:src="@drawable/button_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textSize="20sp"
+            android:text="填写用户资料"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/register_relativeLayout"
+        android:layout_alignParentStart="true">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+    <com.example.qiao.secondhand.widget.CircleImageView
+        android:id="@+id/register_head_image"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/my_checked"
+        />
+            <RelativeLayout
+                android:id="@+id/register_name_relativelayout"
+                android:layout_below="@id/register_head_image"
+                android:layout_centerHorizontal="true"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:background="@mipmap/manage_bg2"
+                >
+                <ImageView
+                    android:id="@+id/register_name_image"
+                    android:layout_marginLeft="10dp"
+                    android:scaleType="fitXY"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:src="@mipmap/register_name"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp" />
+                <EditText
+                    android:id="@+id/register_name_edit"
+                    android:layout_toRightOf="@id/register_name_image"
+                    android:layout_marginLeft="10dp"
+                    android:background="@null"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="        用户名"
+                    />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/register_pwd_relativelayout"
+                android:layout_below="@id/register_name_relativelayout"
+                android:layout_centerHorizontal="true"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:background="@mipmap/manage_bg2"
+                >
+                <ImageView
+                    android:id="@+id/register_pwd_image"
+                    android:layout_marginLeft="10dp"
+                    android:scaleType="fitXY"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:src="@mipmap/register_pwd"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp" />
+                <EditText
+                    android:inputType="textPassword"
+                    android:id="@+id/register_pwd_edit"
+                    android:layout_toRightOf="@id/register_pwd_image"
+                    android:layout_marginLeft="10dp"
+                    android:background="@null"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="        密码"
+                    />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_marginTop="5dp"
+                android:id="@+id/register_sex_relativelayout"
+                android:layout_below="@id/register_pwd_relativelayout"
+                android:layout_centerHorizontal="true"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:background="@mipmap/manage_bg2"
+                >
+                <ImageView
+                    android:id="@+id/register_sex_image"
+                    android:layout_marginLeft="10dp"
+                    android:scaleType="fitXY"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:src="@mipmap/register_sex"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp" />
+                <Spinner
+                    android:id="@+id/register_sex_spinner"
+                    android:layout_toRightOf="@id/register_sex_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:entries="@array/registersex"
+                    android:gravity="center"
+                    >
+                </Spinner>
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/register_age_relativelayout"
+                android:layout_below="@id/register_sex_relativelayout"
+                android:layout_centerHorizontal="true"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="5dp"
+                android:background="@mipmap/manage_bg2"
+                >
+                <ImageView
+                    android:id="@+id/register_age_image"
+                    android:layout_marginLeft="10dp"
+                    android:scaleType="fitXY"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:src="@mipmap/register_age"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp" />
+                <EditText
+                    android:inputType="number"
+                    android:id="@+id/register_age_edit"
+                    android:layout_toRightOf="@id/register_age_image"
+                    android:layout_marginLeft="10dp"
+                    android:background="@null"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="       年龄"
+                    />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/register_phone_relativelayout"
+                android:layout_below="@id/register_age_relativelayout"
+                android:layout_centerHorizontal="true"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="5dp"
+                android:background="@mipmap/manage_bg2"
+                >
+                <ImageView
+                    android:id="@+id/register_phone_image"
+                    android:layout_marginLeft="10dp"
+                    android:scaleType="fitXY"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:src="@mipmap/register_phone"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp" />
+                <EditText
+                    android:id="@+id/register_phone_edit"
+                    android:layout_toRightOf="@id/register_phone_image"
+                    android:layout_marginLeft="10dp"
+                    android:background="@null"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="      11位手机号"
+                    />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_marginTop="5dp"
+                android:id="@+id/register_college_relativelayout"
+                android:layout_below="@id/register_phone_relativelayout"
+                android:layout_centerHorizontal="true"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:background="@mipmap/manage_bg2"
+                >
+                <TextView
+                    android:gravity="center"
+                    android:id="@+id/register_college_text"
+                    android:text="选择学院"
+                    android:layout_marginLeft="10dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp" />
+                <Spinner
+                    android:id="@+id/register_college_spinner"
+                    android:layout_toRightOf="@id/register_college_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    >
+                </Spinner>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_marginTop="5dp"
+                android:id="@+id/register_class_relativelayout"
+                android:layout_below="@id/register_college_relativelayout"
+                android:layout_centerHorizontal="true"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:background="@mipmap/manage_bg2"
+                >
+                <TextView
+                    android:gravity="center"
+                    android:id="@+id/register_class_text"
+                    android:text="选择班级"
+                    android:layout_marginLeft="10dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp" />
+                <Spinner
+                    android:id="@+id/register_class_spinner"
+                    android:layout_toRightOf="@id/register_class_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    >
+                </Spinner>
+            </RelativeLayout>
+            <EditText
+                android:id="@+id/register_signature_edit"
+                android:padding="10dp"
+                android:hint="随便说点什么"
+                android:background="@mipmap/manage_bg2"
+                android:layout_centerHorizontal="true"
+                android:layout_width="300dp"
+                android:layout_below="@id/register_class_relativelayout"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/register_true"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:background="@drawable/register_button"
+                android:text="确定"
+                android:layout_marginTop="20dp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/register_signature_edit"
+                android:layout_width="100dp"
+                android:layout_height="50dp" />
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+
+</RelativeLayout>

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#f6f6f6"
+    android:id="@+id/activity_login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.qiao.secondhand.activity.LoginActivity">
+    <RelativeLayout
+        android:background="#fff"
+        android:id="@+id/login_relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/login_back_image"
+            android:clickable="true"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="3dp"
+            android:src="@drawable/button_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textSize="20sp"
+            android:text="登录账号"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/login_backgroud_image"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:scaleType="fitXY"
+        android:layout_below="@id/login_relativeLayout"
+        android:src="@mipmap/loginbackgroud"
+        android:layout_width="match_parent"
+        android:layout_height="150dp" />
+    <RelativeLayout
+        android:id="@+id/login_relative_2"
+        android:background="#fff"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_below="@id/login_backgroud_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/login_name_textview"
+            android:padding="10dp"
+            android:textSize="25sp"
+            android:background="#fff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="账号"
+            />
+        <EditText
+            android:background="@null"
+            android:id="@+id/login_name_edittext"
+            android:layout_marginLeft="5dp"
+            android:layout_alignTop="@id/login_name_textview"
+            android:layout_alignBottom="@id/login_name_textview"
+            android:hint="昵称/手机号"
+            android:layout_toRightOf="@id/login_name_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <View
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:id="@+id/login_view"
+            android:layout_alignLeft="@id/login_name_textview"
+            android:layout_below="@id/login_name_textview"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#6e6c6c"
+            ></View>
+        <TextView
+            android:id="@+id/login_pwd_textview"
+            android:padding="10dp"
+            android:textSize="25sp"
+            android:background="#fff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/login_view"
+            android:text="密码"
+            />
+        <EditText
+            android:background="@null"
+            android:id="@+id/login_pwd_edittext"
+            android:layout_marginLeft="5dp"
+            android:layout_alignTop="@id/login_pwd_textview"
+            android:layout_alignBottom="@id/login_pwd_textview"
+            android:hint="密码"
+            android:layout_toRightOf="@id/login_pwd_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            />
+    </RelativeLayout>
+   <TextView
+       android:id="@+id/login_register_textview"
+       android:clickable="true"
+       android:layout_marginTop="5dp"
+       android:layout_below="@id/login_relative_2"
+       android:textColor="#68ade9"
+       android:text="@string/register"
+       android:layout_alignParentRight="true"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/logn_button_textview"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:layout_marginTop="50dp"
+        android:layout_below="@id/login_relative_2"
+        android:text="登录"
+        android:gravity="center"
+        android:textSize="30sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:background="@drawable/login_button_selector"
+        />
+</RelativeLayout>
+
+

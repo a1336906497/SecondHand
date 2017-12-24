@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/home_new_listview_image"
+        android:scaleType="fitXY"
+        android:src="@mipmap/ic_empty"
+        android:layout_width="120dp"
+        android:layout_height="120dp" />
+
+    <TextView
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="5dp"
+        android:id="@+id/home_new_listview_place"
+        android:text="交易地点"
+        android:textSize="15sp"
+        android:drawableLeft="@mipmap/place"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/home_new_listview_image"
+        android:layout_toRightOf="@+id/home_new_listview_image"
+        android:layout_toEndOf="@+id/home_new_listview_image" />
+
+    <TextView
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/home_new_listvieww_name"
+        android:text="名称描述"
+        android:textSize="18sp"
+        android:maxLines="1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/home_new_listview_image"
+        android:layout_toEndOf="@+id/home_new_listview_image" />
+
+    <TextView
+        android:id="@+id/home_new_listview_price"
+        android:layout_marginRight="20dp"
+        android:text="￥25"
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/home_new_listview_place"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_below="@id/home_new_listvieww_name"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/home_new_listview_date"
+        android:text="日期"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/home_new_listview_image"
+       />
+
+</RelativeLayout>

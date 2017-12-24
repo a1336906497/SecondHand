@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+
+    <color name="login_normal">#3997d5</color>
+    <color name="login_pressed">#cf6c6c</color>
+
+    <color name="white">#fff</color>
+    <color name="pressed">#ced92f</color>
+
+
+    <color name="green">#a4bd7f</color>
+    <color name="red">#c05d5d</color>
+
+
+
+    <color name="main_checkfalse_color">#8c8c8c</color>
+    <color name="main_checktrue_color">#33fd98</color>
+
+    <color name="text_color">#98fd98</color>
+
+    <color name="line_color">#cbcbcb</color>
+
+    <color name="listview_item_bg_color">#cbcbcb</color>
+
+    <color name="jixuyuedu_color">#fddb35</color>
+
+    <color name="collect_true">#fd0001</color>
+
+    <color name="collect_false">#33fd98</color>
+
+
+</resources>
