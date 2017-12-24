@@ -193,6 +193,7 @@ public class MainMyFragment extends Fragment {
 
         String signature = preferences.getString("userSignature", "");
 
+
         String image = preferences.getString("userImage", "");
 
         mainMySignature.setText(signature);
